@@ -20,7 +20,17 @@
 
 // Import partials
 @import "nav";
+@import "jumbotron";
+
 
 h3 {
   font-size: 1.5rem;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-style: italic;
+  text-align: center;
+  font-size: small;
 }

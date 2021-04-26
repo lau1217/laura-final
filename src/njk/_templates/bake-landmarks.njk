@@ -1,0 +1,23 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ name }}{% endblock %}
+
+{% block page_description %}{{ name }} at {{ location }}{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <img src="../img/img-austin/landmarks/{{ image }}" alt="" class="img-fluid mb-2">
+      <p>{{ location }}</p>
+    </div>
+    <div class="row">
+      <div class="col">
+          <h1> <a href="{{ url }}">{{ name }}</a></h1>
+          <h2>{{ established }}</h2>
+          <p>{{ description | safe }}</p>
+      </div>
+    </div>
+  </article>
+{% endblock %}
