@@ -1,0 +1,13 @@
+<button type="button" class="fixed-bottom ml-2 mb-2" id="scrollToTopBtn">☝️</button>
+  <script>
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+    var rootElement = document.documentElement
+
+    function scrollToTop() {
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+  </script>

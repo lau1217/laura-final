@@ -3,16 +3,16 @@
 
 // $body-bg: black;
 // $body-color: white;
-// $link-hover-color: grey;
+$link-hover-color: rgb(255, 106, 0);
 // $font-family-sans-serif: "Helvetica Neue";
 
+$primary: rgb(255, 126, 126);
 /* bootstrap */
 // Option A: Include all of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
 // Option B: Include parts of Bootstrap
 // See https://getbootstrap.com/docs/4.1/getting-started/theming/#importing
-
+@import url('https://fonts.googleapis.com/css2?family=Karantina&display=swap');
 // Required
 // @import "../../node_modules/bootstrap/scss/functions";
 // @import "../../node_modules/bootstrap/scss/variables";
@@ -21,16 +21,35 @@
 // Import partials
 @import "nav";
 @import "jumbotron";
+@import "top";
+@import "map";
 
-
+h1 {
+  text-align: center;
+  font-size: 8 rem;
+  font-family: "Karantina";
+}
 h3 {
   font-size: 1.5rem;
 }
-h1 {
+h6 {
   text-align: center;
-}
-h2 {
   font-style: italic;
-  text-align: center;
   font-size: small;
 }
+.card-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Karantina";
+  font-size: 6 rem;
+}
+.card-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.overlay {
+  background-color: rgba(249, 166, 0, 0.593);
+  }
+
+

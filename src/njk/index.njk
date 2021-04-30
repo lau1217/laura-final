@@ -6,23 +6,69 @@
 <div class="container">
   <div class="row">
     <div class="col align-self-center">
-    <h1>Get to know the weird and wonderful Austin</h1>
-    <p>Austin has many wonderful sights, restaurants and culture. Surprise wait for both locals or tourist a like as we explore all Austin has to offer!</p>
+      <h1>Get to know the weird and wonderful Austin</h1>
+      <p>Austin has many sights, sounds and cultures. Surprises wait for both locals or tourist alike when we explore all Austin has to offer!</p>
     </div>
-    <div class="row">
-    {% for landmarks in Austin.landmarks %}
-    <div class="col-sm-6">
-      <div class="card mb-4 mt-4">
-       <img src="img/img-austin/landmarks/{{ landmarks.imagebw }}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{ landmarks.name }}</h5>
-          <p class="card-text">{{ landmarks.activities }}</p>
-          <a href="#" class="btn btn-primary">more</a>
+  </div>
+  <div class="row">
+      {% for landmarks in Austin.landmarks %}
+        <div class="col-md-6 mb-4">
+          <div class="card bg-dark text-white">
+            <img class="card-img" src="img/img-austin/landmarks/{{ landmarks.imagebw }}" class="card-img-top" alt="...">
+            <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+              <h1 class="card-title">{{ landmarks.name }}</h1>
+              <p class="card-text">{{ landmarks.activities }}</p>
+              <a href="landmarks/{{ landmarks.slug }}.html" class="btn btn-primary align-self-center mx-auto text-white">more</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+</div>
+
+<section class="bg-primary">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col mb-2">
+        <div data-spy="scroll" data-target="#restaurants" data-offset="0">
+          <h1 id="restaurants">Restaurants</h1>
         </div>
       </div>
     </div>
-    {% endfor %}
+    <div class="row text-center">
+      <div class="col mb-2">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+          <div class="carousel-inner">
+            {% for restaurants in restaurants.restaurants%}
+              <div class="carousel-item {% if loop.first %}active{% endif %}">
+                <img src="img/img-austin/restaurants/{{ restaurants.image }}" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>{{restaurants.name}}</h1>
+                    <h6>{{restaurants.category}}</h6>
+                    <p>{{restaurants.address}}</p>
+                  </div>
+              </div>
+            {% endfor %}
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-</div>
+</section>
+
 {% endblock %}

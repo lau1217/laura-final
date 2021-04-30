@@ -8,14 +8,14 @@
 
 {% block content %}
   <article class="container">
-    <div class="row">
+    <div class="row ">
+    <div class="col-sm-5">
       <img src="../img/img-austin/landmarks/{{ image }}" alt="" class="img-fluid mb-2">
       <p>{{ location }}</p>
     </div>
-    <div class="row">
-      <div class="col">
+      <div class="col-sm-7">
           <h1> <a href="{{ url }}">{{ name }}</a></h1>
-          <h2>{{ established }}</h2>
+          <h6>{{ established }}</h6>
           <p>{{ description | safe }}</p>
       </div>
     </div>

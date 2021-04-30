@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="../index.html">Weird</a>
+  <a class="navbar-brand" href="../index.html"><img src="../img/img-austin/city-of-austin-logo.gif" width="30" height="30" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,49 +21,43 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Landmarks
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           
-          <a class="dropdown-item" href="../landmarks/university-of-texas.html">The University of Texas</a>
+            <a class="dropdown-item" href="../landmarks/university-of-texas.html">The University of Texas</a>
           
-          <a class="dropdown-item" href="../landmarks/texas-state-capitol.html">The Texas State Capitol</a>
+            <a class="dropdown-item" href="../landmarks/texas-state-capitol.html">The Texas State Capitol</a>
           
-          <a class="dropdown-item" href="../landmarks/lady-bird-lake.html">Lady Bird Lake</a>
+            <a class="dropdown-item" href="../landmarks/lady-bird-lake.html">Lady Bird Lake</a>
           
-          <a class="dropdown-item" href="../landmarks/mount-bonnell.html">Mount Bonnell</a>
+            <a class="dropdown-item" href="../landmarks/mount-bonnell.html">Mount Bonnell</a>
           
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Restaurants
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          
-          <a class="dropdown-item" href="../books/the-clown.html">The Clown</a>
-          
-          <a class="dropdown-item" href="../books/the-shipping-news.html">The Shipping News</a>
-          
-          <a class="dropdown-item" href="../books/the-hearing-trumpet.html">The Hearing Trumpet</a>
-          
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="../murals.html">Murals <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html#restaurants">Restaurants</a>
       </li>
     </ul>
   </div>
 </nav>
+
+
     <div class="jumbotron banner text-center">
-  <h1>Weird & Wordy</h1>
+  <a href="../index.html"><h1>Weird & Wordy</h1></a>
   <p>Austin tourism with a wordy gal</p>
 </div>
     
   <article class="container">
-    <div class="row">
+    <div class="row ">
+    <div class="col-sm-5">
       <img src="../img/img-austin/landmarks/lady-bird-lake.jpg" alt="" class="img-fluid mb-2">
       <p>1200 W Cesar Chavez St, Austin, TX 78703</p>
     </div>
-    <div class="row">
-      <div class="col">
+      <div class="col-sm-7">
           <h1> <a href="https://austintexas.gov/page/lady-bird-lake">Lady Bird Lake</a></h1>
-          <h2>Established 1960</h2>
+          <h6>Established 1960</h6>
           <p><p>Lady Bird Lake (formerly, and still colloquially referred to as Town Lake) is a river-like reservoir on the Colorado River in Austin, Texas, United States. The City of Austin created the reservoir in 1960 as a cooling pond for a new city power plant. The lake, which has a surface area of 416 acres (168 ha), is now used primarily for recreation and flood control. The reservoir is named in honor of former First Lady of the United States Lady Bird Johnson.</p>
 <p>Lady Bird Lake is a major recreation area for the City of Austin. The lake's banks are bounded by the Ann and Roy Butler Hike-and-Bike Trail, and businesses offer recreational watercraft services along the lakefront portion of the trail. Austin's largest downtown park, Zilker Park, is adjacent to the lake, and Barton Springs, a major attraction for swimmers, flows into the lake.</p>
 <p>- Source: <a href="https://en.wikipedia.org/wiki/Lady_Bird_Lake">Wikipedia</a></p></p>
@@ -75,11 +69,23 @@
     <footer>
 <p id="legal" class="center-block text-center">
   <small>&copy; <span class="copyright-year"></span>
-  A class project by First Last.
+  A class project by Laura Morales.
 </p>
 </footer>
 
+    <button type="button" class="fixed-bottom ml-2 mb-2" id="scrollToTopBtn">☝️</button>
+  <script>
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+    var rootElement = document.documentElement
 
+    function scrollToTop() {
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+  </script>
     <script src="../js/jquery.js"></script>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.js"></script>
