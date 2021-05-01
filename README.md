@@ -3,12 +3,12 @@
 By Laura Morales, Intro Coding for Journalists class
 
 Final project class assignment: Tourism Site
-  • Project sketch, Wed Apr 21
-  • Project check-in (HTML & Templates), Fri Apr 30
-  • Project check-in (CSS), Wed May 5
-  • Class presentations (you'll show your progress to the class) and course evaluations, Wed May 5
-  • Final project, Fri May 7
-  
+- Project sketch, Wed Apr 21
+- Project check-in (HTML & Templates), Fri Apr 30
+- Project check-in (CSS), Wed May 5
+- Class presentations (you'll show your progress to the class) and course evaluations, Wed May 5
+- Final project, Fri May 7
+
 # ICJ Project Rig
 
 This project rig was developed for the [Intro to Coding for Journalists](https://github.com/utdata/icj-class) class taught by Christian McDonald, Assistant Professor of Practice at the School of Journalism, Moody College of Communication, University of Texas at Austin.
