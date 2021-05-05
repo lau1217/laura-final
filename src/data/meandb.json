@@ -1,0 +1,65 @@
+{
+  "blogs": [
+    {
+      "slug": "at-university",
+      "Headline": "Rockin’ all around campus",
+      "date": "April 30, 2020",
+      "image": "UTB.jpeg",
+      "post": [
+        {
+          "type": "text",
+          "value": "We met here at THE University of Texas and have been together since freshman year. We have all sorts of amazing adventures in Austin."
+        },
+        {
+          "type": "br",
+          "value": "br"
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "soco.jpeg",
+            "alt": "Family Photo"
+          }
+        },
+        {
+          "type": "br",
+          "value": "br"
+        },
+        {
+          "type": "text",
+          "value": "I love exploring austin with her, but I think my favorite thing is just hanging out together."
+        },
+        {
+          "type": "br",
+          "value": "br"
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "park.jpeg",
+            "alt": "Family Photo"
+          }
+        },
+        {
+          "type": "br",
+          "value": "br"
+        },
+        {
+          "type": "text",
+          "value": "Anyway, I am a lucky gal. She actually taught me how to use all the macros to make this page. 😊 University, Austin and my world would not be the same without her. ❤️ ALSO, it was her birthday this Monday!"
+        },
+        {
+          "type": "br",
+          "value": "br"
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "cute.jpeg",
+            "alt": "Family Photo"
+          }
+        }
+      ]
+    }
+  ]
+}

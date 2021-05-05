@@ -3,7 +3,7 @@
 
 // $body-bg: black;
 // $body-color: white;
-$link-hover-color: rgb(255, 106, 0);
+$link-hover-color: rgb(124, 252, 252);
 // $font-family-sans-serif: "Helvetica Neue";
 
 $primary: rgb(255, 126, 126);
@@ -23,6 +23,7 @@ $secondary: rgba(195, 126, 255, 0.575);
 @import "nav";
 @import "jumbotron";
 @import "top";
+@import "carousel";
 
 h1 {
   text-align: center;
@@ -51,5 +52,3 @@ h6 {
 .overlay {
   background-color: rgba(249, 166, 0, 0.593);
   }
-
-

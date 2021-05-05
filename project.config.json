@@ -9,6 +9,11 @@
       "fileId": "1hwjT_MwVuPwxl6FqQhoGkg3WOUquQeDVQCQlZDD8SIg",
       "type": "sheet",
       "name": "Austin"
+    },
+    {
+      "fileId": "1uUdQmFzpq4JepE8EWX9ERy3pdGJsdcb3ruJrAj2_KC4",
+      "type": "doc",
+      "name": "meandb"
     }
   ],
   "to_bake": [
@@ -18,6 +23,13 @@
       "array": "landmarks",
       "slug": "slug",
       "path": "landmarks"
+    },
+    {
+      "template": "bake-me&b",
+      "data": "meandb",
+      "array": "blogs",
+      "slug": "slug",
+      "path": "blogs"
     }
   ]
 }

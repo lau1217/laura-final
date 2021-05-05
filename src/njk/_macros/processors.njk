@@ -14,6 +14,10 @@
 <img src="img/{{ value.filename }}" alt="{{ value.alt }}" class="img-fluid">
 {% endmacro %}
 
+{% macro br(value) %}
+<{{value}}>
+{% endmacro %}
+
 {% macro list(value) %}
 <ul>
   {% for item in value %}
